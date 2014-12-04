@@ -1,0 +1,39 @@
+
+.custom-switcher-wrapper{
+    border: 1px solid #ccc;
+    height: 2rem;
+    overflow: hidden;
+    position: relative;
+    width: 7rem;
+}
+.custom-switchbox-slider{
+    font-size: 0;
+    height: calc(2rem - 2px);
+    left: -50%;
+    position: absolute;
+    width: 150%;
+    transition: left 0.5s;
+}
+.custom-switchbox-slider.checked{
+    left: 0
+}
+.texto-inactivo, .texto-activo, .custom-switch{
+    color: #FFF;
+    display: inline-block;
+    font-size: 0.85rem;
+    height: calc(2rem - 2px);
+    padding: 0.5rem 0;
+    width: 33.3%;
+    vertical-align: middle;
+    line-height: 0.8rem;
+    text-align: center;
+}
+.texto-activo{
+    background: rgba(30, 117, 2, 1);
+    cursor: pointer;
+}
+
+.texto-inactivo{
+    background: #940000;
+    cursor: pointer;
+}
